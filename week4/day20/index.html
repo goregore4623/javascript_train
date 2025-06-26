@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Your Name</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Hello, I'm Your Name</h2>
+                <p>A passionate Web Developer learning JavaScript and MySQL.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>はじめまして！私は[あなたの名前]です。この1ヶ月間、JavaScriptの基礎から始まり、Node.jsとExpress.jsを使ったバックエンド開発、そしてMySQLとの連携を学び、このポートフォリオサイトを構築しました。</p>
+                <p>特にMySQLの学習経験を活かし、データベースと連携するWebアプリケーション開発に強い関心を持っています。新しい技術を学ぶことに常に意欲的で、問題解決に情熱を注いでいます。</p>
+                <p>このサイトでは、これまでの学習で作成したプロジェクトを紹介しています。私のスキルと成長の軌跡をご覧いただければ幸いです。</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">JavaScript (ES6+)</div>
+                    <div class="skill-item">HTML5 & CSS3</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Express.js</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">RESTful API</div>
+                    <div class="skill-item">Git & GitHub</div>
+                    <div class="skill-item">Web Development</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Projects will be dynamically loaded here by JavaScript -->
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>ご質問やご依頼がありましたら、以下のフォームまたはメールアドレスからお気軽にご連絡ください。</p>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn Profile</a></p>
+                <p>GitHub: <a href="#" target="_blank">Your GitHub Profile</a></p>
+
+                <form id="contact-form">
+                    <div>
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div>
+                        <label for="contact-email">Email:</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <div>
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

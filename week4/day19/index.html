@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../day18/style.css"> <!-- Day 18のスタイルシートを読み込み -->
+    <style>
+        /* Day 19 練習問題 5: projects-grid と project-card のスタイルをここに追加 */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px; /* 固定の高さ */
+            object-fit: cover; /* 画像がカードに収まるように調整 */
+            display: block;
+        }
+
+        .project-card h3 {
+            margin: 15px 15px 5px;
+            font-size: 1.4rem;
+        }
+
+        .project-card p {
+            margin: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #666;
+            flex-grow: 1; /* 説明文が長くなってもレイアウトが崩れないように */
+        }
+
+        .project-card .project-links {
+            padding: 0 15px 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .project-card .project-links a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card .project-links a:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Your Name</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Hello, I'm Your Name</h2>
+                <p>A passionate Web Developer learning JavaScript and MySQL.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>ここに自己紹介文を書きます。これまでの経験、学習への意欲、将来の目標などを具体的に記述しましょう。</p>
+                <p>特に、MySQLの学習経験がどのようにWeb開発に活かせるかなどをアピールすると良いでしょう。</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">HTML & CSS</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Express.js</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">Git</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Projects will be dynamically loaded here by JavaScript -->
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>ご質問やご依頼がありましたら、お気軽にご連絡ください。</p>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn Profile</a></p>
+                <p>GitHub: <a href="#" target="_blank">Your GitHub Profile</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
